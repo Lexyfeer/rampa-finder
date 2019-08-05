@@ -8,7 +8,7 @@ import Startups from '../components/Startups';
 
 
 
-export default class NavBar extends Component {
+export default class NavbarProfile extends Component {
   render() {
     return (
       <Fragment>
@@ -28,7 +28,7 @@ export default class NavBar extends Component {
               </Nav.Item>
 
               <Nav.Item>
-                <NavLink className="navMenuLink" exact to="/MakeOrders">
+                <NavLink className="navMenuLink" exact to="/Startups">
                   <h6>StartUps</h6>
                 </NavLink>
               </Nav.Item>
