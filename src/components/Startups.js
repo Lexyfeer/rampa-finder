@@ -4,7 +4,7 @@ class Startups extends Component {
     render() {
             return(
                 <div>
-                    <p>Componente para mostrar todas las startups y filtros</p>
+                    <p>Componente para mostrar todas las Startups</p>
                     
                     
                 </div>

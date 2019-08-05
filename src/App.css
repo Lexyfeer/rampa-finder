@@ -13,30 +13,34 @@ body {
 .App {
   width: auto;
   height: auto;
-  margin-top: 6.1rem;
+  margin-top: 5.9rem;
   border: solid .2rem lawngreen;
 }
 
 /* BARRA DE NAVEGACION */
 nav {
-  background-color: #313636;
-  border-bottom: .1rem solid grey;
+  background-color: rgb(61, 61, 61);
+  border-bottom: .5rem solid grey;
 
-  /* border: solid .1rem green; */
+  border: solid .1rem grey;
 }
 
-.navMenu {
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
   border: solid .2rem palevioletred;
 }
 
 .navMenuLink {
-  width: 7rem;
+  width: 7.5rem;
   height: 3rem;
   display: inline-block;
-  margin: 1rem;
+  margin: .5rem;
   border: 0.08rem solid white;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -48,13 +52,13 @@ nav {
 .navMenuLink:hover {
   color: white;
   text-decoration: none;
-  border: 0.08rem solid #ffd151;
+  border: 0.08rem solid rgba(248, 5, 5, 0.822);
   cursor: pointer;
 }
 
 .navMenuLink.active {
   font-size: 1rem;
-  border: 0.2rem solid rgba(248, 5, 5, 0.822);
+  border: 0.2rem solid rgb(248, 5, 45);
   text-shadow: 0 0 1rem #fff, 0 0 5rem #fff, 0 0 .10rem #f75456;
   -webkit-text-fill-color: #f4ecff;
   -webkit-text-stroke-color: #f75456;
@@ -62,14 +66,15 @@ nav {
 }
 
 .navMenuLink h6 {
-  margin: .6rem;
+  margin: .7rem auto;
   text-align: center;
 }
+
 
 /* LOGO DE LA NAV */
 .App-logo-image {
   width: 100%;
-  height: 3.5rem;
+  height: 4rem;
 
   border: solid .2rem red;
 }

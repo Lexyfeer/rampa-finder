@@ -8,7 +8,7 @@ import Startups from '../components/Startups';
 
 
 
-export default class NavBar extends Component {
+export default class NavbarProfile extends Component {
   render() {
     return (
       <Fragment>
