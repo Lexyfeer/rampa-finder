@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/rampa-finder/static/css/main.7e68f7f4.chunk.css",
+    "main.js": "/rampa-finder/static/js/main.650fc48a.chunk.js",
+    "main.js.map": "/rampa-finder/static/js/main.650fc48a.chunk.js.map",
+    "runtime~main.js": "/rampa-finder/static/js/runtime~main.04591969.js",
+    "runtime~main.js.map": "/rampa-finder/static/js/runtime~main.04591969.js.map",
+    "static/js/2.e098601e.chunk.js": "/rampa-finder/static/js/2.e098601e.chunk.js",
+    "static/js/2.e098601e.chunk.js.map": "/rampa-finder/static/js/2.e098601e.chunk.js.map",
+    "index.html": "/rampa-finder/index.html",
+    "precache-manifest.31a5098b4cf0b098af0e9d62698c367c.js": "/rampa-finder/precache-manifest.31a5098b4cf0b098af0e9d62698c367c.js",
+    "service-worker.js": "/rampa-finder/service-worker.js",
+    "static/css/main.7e68f7f4.chunk.css.map": "/rampa-finder/static/css/main.7e68f7f4.chunk.css.map",
+    "static/media/rampa_logo.svg": "/rampa-finder/static/media/rampa_logo.ab3fe23b.svg"
+  }
+}
