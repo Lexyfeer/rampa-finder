@@ -8,7 +8,12 @@ class Startups extends Component {
         this.state = {
             startups: [],
             founders: [],
-            updates: []
+            updates: [],
+            valuetoUpdate: {
+                observaciones: '',
+                evaluacion: '',
+                eval_num: 0,
+            }
 
         }
         this.viewStartups= this.viewStartups.bind(this);
@@ -44,7 +49,7 @@ componentWillMount(){
             .then(response => response.json())
             .then(founders => console.log({ founders: founders }));
             
-        fetch('https://45.232.252.23/laboratoria/public/_/items/portfolio_updates',
+        fetch('http://45.232.252.23/laboratoria/public/_/items/portfolio_updates',
             {
                 method: 'GET',
                 headers: {
@@ -57,7 +62,25 @@ componentWillMount(){
             .then(updates => console.log({ updates: updates }));
     }
 
+    upDate(id, value){  
+        fetch('http://45.232.252.23/laboratoria/public/_/items/startups/'+ id,{
+            method: 'PATCH', 
+            headers: {
+             'Accept': 'application/json',
+             'Content-type': 'application/json;',
+             Authorization: 'Bearer laboratoriaToken2019'
+            },
+            body: JSON.stringify(value),
+           }
+           ).then(response => response.json())
+           .then(data =>{
+               console.log('exitp',data)
+               return data
+           }).catch(error => console.error('Error:', error));         
+        }
+
     render() {
+        /*this.upDate(65, valuetoUpdate )*/;
         const { startups } = this.state;
         return (
 
@@ -79,6 +102,10 @@ componentWillMount(){
                                         <p className="card-text">{startup.one_liner}</p>
                                         <p className="card-text">{startup.website}</p>
                                         <p className="card-text">{startup.startup_status}</p>
+                                        <p className="card-text">{startup.observaciones}</p>
+                                        <p className="card-text">{startup.eval_num}</p>
+                                        <p className="card-text">{startup.evaluacion}</p>
+
                                         <a
                                             href={startup.linkProject}
                                             rel="noopener noreferrer"
@@ -100,8 +127,9 @@ componentWillMount(){
                         }
                     })}
                 </div>
-
             </Fragment>
+            
+            
         )
     }
 }
