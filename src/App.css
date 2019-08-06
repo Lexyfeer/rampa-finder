@@ -85,6 +85,7 @@ nav {
 }
 
 .form-inline {
+  margin: .5rem;
   padding: 0 .5rem;
 }
 
@@ -120,7 +121,7 @@ nav {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media screen and (max-width: 425px) and (min-width: 376px) {
   .form-inline {
-    width: 100%;
+    width: auto;
   }
 }
 

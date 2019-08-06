@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import Search from './Search';
 
-class Startups extends Component {
+class Portfolio extends Component {
     render() {
         return (
             <Fragment>
                 <div>
                     <Search />
-                    <p>Componente Para mostrar todas las Startups</p>
+                    <p>Componente para mostrar solo las startups que ya tengan en su portafolio</p>
                     
                 </div>
             </Fragment>
@@ -16,4 +16,4 @@ class Startups extends Component {
     }
 }
 
-export default Startups;
+export default Portfolio;
