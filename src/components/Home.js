@@ -55,7 +55,7 @@ componentWillMount() {
         .then(data => {this.setState({ updates: data.data }) });
 }
 
-    }
+    
 
 
 
