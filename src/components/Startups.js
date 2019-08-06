@@ -8,11 +8,12 @@ class Startups extends Component {
                 <div>
                     <Search />
                     <p>Componente Para mostrar todas las Startups</p>
-                    
+
                 </div>
             </Fragment>
 
         )
+
     }
 }
 
