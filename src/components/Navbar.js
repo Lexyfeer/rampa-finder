@@ -4,6 +4,7 @@ import { NavLink, Link, Route } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 
 import Home from '../components/Home'
+import Portfolio from '../components/Portfolio';
 import Startups from '../components/Startups';
 
 
@@ -28,6 +29,12 @@ export default class NavbarProfile extends Component {
               </Nav.Item>
 
               <Nav.Item>
+                <NavLink className="navMenuLink" exact to="/Portfolio">
+                  <h6>Portafolio</h6>
+                </NavLink>
+              </Nav.Item>
+
+              <Nav.Item>
                 <NavLink className="navMenuLink" exact to="/Startups">
                   <h6>StartUps</h6>
                 </NavLink>
@@ -38,6 +45,7 @@ export default class NavbarProfile extends Component {
         </Navbar>
 
         <Route exact path="/" component={Home} />
+        <Route path="/Portfolio" component={Portfolio} />
         <Route path="/Startups" component={Startups} />
 
       </Fragment>

@@ -2,11 +2,12 @@
   "name": "rampa-finder",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Lexyfeer.github.io/rampa-finder",
+
   "dependencies": {
     "bootstrap": "^4.3.1",
     "chart.js": "^2.8.0",
-    "gh-pages": "^2.1.0",
+    "gh-pages": "2.0.1",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.10",
     "react-chartjs-2": "^2.7.6",
