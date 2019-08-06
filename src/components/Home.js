@@ -63,9 +63,10 @@ componentWillMount(){
         return (
 
             <Fragment>
-                <Search />
 
                 <div className="contentStartups">
+                <Search />
+                <h1>Startups pendientes por evaluar</h1>
                     {startups.map((startup, index) => {
                         if (startup.startup_status === 'Seguimiento') {
 
