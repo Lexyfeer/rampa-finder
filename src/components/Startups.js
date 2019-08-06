@@ -10,8 +10,11 @@ import React, { Component } from 'react';
             founders:[],
             updates:[]
         }
+        this.viewStartups= this.viewStartups.bind(this);
+
     }
-componentWillMount(){
+
+viewStartups(){
     fetch('http://45.232.252.23/laboratoria/public/_/items/startups', 
     { method: 'GET',
         headers: {
@@ -21,7 +24,11 @@ componentWillMount(){
     }
     )
     .then(response =>  response.json ()) 
-    .then(data => {this.setState({startups: data.data})});
+    .then(data => {this.setState({startups: data.data})}); 
+}
+
+componentWillMount(){
+    this.viewStartups();
 
     fetch('http://45.232.252.23/laboratoria/public/_/items/founders', 
     { method: 'GET',
@@ -45,6 +52,8 @@ componentWillMount(){
     .then(response =>  response.json ()) 
     .then(updates => console.log({updates: updates}));
 }
+
+
 
 
 render () {
