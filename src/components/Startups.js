@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import GrowthChart from './charts.js';
 
 
  class Startups extends Component {
@@ -12,12 +12,12 @@ import React, { Component } from 'react';
 componentWillMount(){
     fetch('http://45.232.252.23/laboratoria/public/_/items/startups', { method: 'GET',
     headers: {
-        Authorization: 'Bearer laboratoriaToken2019',    
-        'Content-type': 'application/json; '     
+        Authorization: 'Bearer laboratoriaToken2019',
+        'Content-type': 'application/json; '
     }
     }
     )
-    .then(response =>  response.json ()) 
+    .then(response =>  response.json ())
     .then(data => this.setState({data}));
 }
 
@@ -25,7 +25,9 @@ componentWillMount(){
 
 render () {
     return(
-        <div> Aqui van los datos </div> 
+        <div> Aqui van los datos
+        <GrowthChart/>
+        </div>
 
 
 
