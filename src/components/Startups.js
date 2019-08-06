@@ -4,24 +4,33 @@ import React, { Component, Fragment } from 'react';
 class Startups extends Component {
     constructor(props) {
         super(props);
+
         this.state = {
             startups: [],
             founders: [],
             updates: []
+
         }
+        this.viewStartups= this.viewStartups.bind(this);
+
     }
-    componentWillMount() {
-        fetch('http://45.232.252.23/laboratoria/public/_/items/startups',
-            {
-                method: 'GET',
-                headers: {
-                    Authorization: 'Bearer laboratoriaToken2019',
-                    'Content-type': 'application/json; '
-                }
-            }
-        )
-            .then(response => response.json())
-            .then(data => { this.setState({ startups: data.data }) });
+
+
+viewStartups(){
+    fetch('http://45.232.252.23/laboratoria/public/_/items/startups', 
+    { method: 'GET',
+        headers: {
+        Authorization: 'Bearer laboratoriaToken2019',    
+        'Content-type': 'application/json; '     
+    }
+    }
+    )
+    .then(response =>  response.json ()) 
+    .then(data => {this.setState({startups: data.data})}); 
+}
+
+componentWillMount(){
+    this.viewStartups();
 
         fetch('http://45.232.252.23/laboratoria/public/_/items/founders',
             {
@@ -34,7 +43,8 @@ class Startups extends Component {
         )
             .then(response => response.json())
             .then(founders => console.log({ founders: founders }));
-        fetch('http://45.232.252.23/laboratoria/public/_/items/portfolio_updates',
+            
+        fetch('https://45.232.252.23/laboratoria/public/_/items/portfolio_updates',
             {
                 method: 'GET',
                 headers: {
@@ -46,7 +56,6 @@ class Startups extends Component {
             .then(response => response.json())
             .then(updates => console.log({ updates: updates }));
     }
-
 
     render() {
         const { startups } = this.state;
@@ -93,9 +102,9 @@ class Startups extends Component {
                 </div>
 
             </Fragment>
-
         )
     }
 }
+
 
 export default Startups;
