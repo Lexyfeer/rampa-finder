@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from 'react';
-// import Chart from './Charts';
+import Search from './Search';
 
 class Startups extends Component {
+
     constructor(props) {
         super(props);
 
@@ -83,11 +84,10 @@ componentWillMount(){
         /*this.upDate(65, valuetoUpdate )*/;
         const { startups } = this.state;
         return (
-
             <Fragment>
                 <div className="contentStartups">
                     {startups.map((startup, index) => {
-                        if (startup.startup_status === 'Seguimiento') {
+                        if (startup.startup_status) {
 
                             return (
                                 <div className="card" key={index}>
@@ -127,12 +127,19 @@ componentWillMount(){
                         }
                     })}
                 </div>
+            
+            
+                <div>
+                    <Search />
+                    <p>Componente Para mostrar todas las Startups</p>
+
+                </div>
             </Fragment>
-            
-            
+
+
         )
+
     }
 }
-
 
 export default Startups;
