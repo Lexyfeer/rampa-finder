@@ -127,7 +127,7 @@ componentWillMount(){
                         }
                     })}
                 </div>
-            </Fragment>
+            
             
                 <div>
                     <Search />
