@@ -11,7 +11,7 @@ class Startups extends Component {
         }
     }
     componentWillMount() {
-        fetch('http://45.232.252.23/laboratoria/public/_/items/startups',
+        fetch('https://45.232.252.23/laboratoria/public/_/items/startups',
             {
                 method: 'GET',
                 headers: {
@@ -23,7 +23,7 @@ class Startups extends Component {
             .then(response => response.json())
             .then(data => { this.setState({ startups: data.data }) });
 
-        fetch('http://45.232.252.23/laboratoria/public/_/items/founders',
+        fetch('https://45.232.252.23/laboratoria/public/_/items/founders',
             {
                 method: 'GET',
                 headers: {
@@ -34,7 +34,7 @@ class Startups extends Component {
         )
             .then(response => response.json())
             .then(founders => console.log({ founders: founders }));
-        fetch('http://45.232.252.23/laboratoria/public/_/items/portfolio_updates',
+        fetch('https://45.232.252.23/laboratoria/public/_/items/portfolio_updates',
             {
                 method: 'GET',
                 headers: {
