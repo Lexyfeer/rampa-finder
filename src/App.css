@@ -23,8 +23,6 @@ h6 {
   width: auto;
   height: auto;
   margin-top: 5.9rem;
-
-  border: solid .2rem lawngreen;
 }
 
 /* BARRA DE NAVEGACION */
@@ -100,8 +98,6 @@ nav {
 
 .contentStartups {
   margin: auto;
-
-  border: solid .2rem red;
 }
 
 .contentStartups a {
