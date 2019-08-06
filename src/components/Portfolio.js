@@ -29,7 +29,7 @@ class Portfolio extends Component {
         return (
             <Fragment>
                 <div>
-                    <Search />
+                    
                     <p>Componente para mostrar solo las startups que ya tengan en su portafolio</p>
 
                     {updates.map((update, index) => {
