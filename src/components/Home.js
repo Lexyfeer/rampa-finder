@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Search from './Search';
-import Chart from './Charts';
+
 
 class Home extends Component {
 
@@ -42,23 +42,8 @@ componentWillMount() {
     )
         .then(response => response.json())
         .then(data => { this.setState({ founders: data.data }) });
-    fetch('http://45.232.252.23/laboratoria/public/_/items/portfolio_updates',
-        {
-            method: 'GET',
-            headers: {
-                Authorization: 'Bearer laboratoriaToken2019',
-                'Content-type': 'application/json; '
-            }
-        }
-    )
-        .then(response => response.json())
-        .then(data => {this.setState({ updates: data.data }) });
-}
-
     
-
-
-
+}
 
 // componentWillMount(){
 //   this.getChartData();
@@ -97,8 +82,7 @@ componentWillMount() {
 
 render() {
     const { startups } = this.state;
-    const { founders } = this.state;
-    const { updates } = this.state;
+    // const { founders } = this.state;
     return (
 
       <Fragment>
@@ -142,42 +126,6 @@ render() {
         }
       })}
       </div>
-
-      {updates.map((update, index) => {
-                   if (update.crecimiento != 'null') {
-                       return (
-                           <div className="card" key={index}>
-                               <div className="card-body">
-                                  <p className="card-text">{update.startup}</p>
-                                   <h5 className="card-title">{update.crecimiento}</h5>
-                                   <p className="card-text">{update.mes}</p>
-                                   <p className="card-text">{update.fecha}</p>
-                                   <a
-                                       href={update.fecha}
-                                       rel="noopener noreferrer"
-                                       target="_blank"
-                                   >
-                                   </a>
-                                   <a
-                                       href={update.mes}
-                                       rel="noopener noreferrer"
-                                       target="_blank"
-                                   >
-                                       Ver más detalles del proyecto
-                                  </a>
-                                   <a href="#" className="btn btn-primary">Go somewhere</a>
-                               </div>
-                               <Chart
-                               chartData = "1"
-                               labels = "2"
-                               data = "3"
-                               title="Crecimiento"
-                               legendPosition="bottom"
-                               />
-                           </div>
-                       )
-                   }
-               })}
          </Fragment>
        )
      }
