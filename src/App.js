@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import Startups from './components/Startups'
 // import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 // import Main from "./components/main";
 
@@ -11,7 +10,6 @@ class App extends Component{
         return(
             <div className="App">
                <NavbarProfile />
-               <Startups/>
             </div>
         )
     }
