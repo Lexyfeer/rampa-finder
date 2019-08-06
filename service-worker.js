@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/rampa-finder/precache-manifest.270a4d24fc07c3003aaa9c5ea0b2647f.js"
+  "/rampa-finder/precache-manifest.0ad8d1eb47287b5c801f0ea0549eca08.js"
 );
 
 self.addEventListener('message', (event) => {
