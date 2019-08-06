@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Chart from './Charts.js';
 
 class Startups extends Component {
     constructor(props) {
@@ -50,7 +51,7 @@ class Startups extends Component {
     render() {
         const { startups } = this.state;
         return (
-            
+
             <Fragment>
                 <div className="contentStartups">
                     {startups.map((startup, index) => {
@@ -98,10 +99,3 @@ class Startups extends Component {
 }
 
 export default Startups;
-
-
-
-
-
-
-
