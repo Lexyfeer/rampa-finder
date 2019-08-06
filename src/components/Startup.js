@@ -10,26 +10,23 @@ import React, { Component } from 'react';
         }
     }
 componentWillMount(){
-    fetch('http://45.232.252.23/laboratoria/public/_/items/startups', { method: 'GET',
-    headers: {
+    fetch('http://45.232.252.23/laboratoria/public/_/items/startups', 
+    { method: 'GET',
+        headers: {
         Authorization: 'Bearer laboratoriaToken2019',    
         'Content-type': 'application/json; '     
     }
     }
     )
     .then(response =>  response.json ()) 
-    .then(data => this.setState({data}));
+    .then(name => console.log({data: name}));
 }
 
 
 
 render () {
     return(
-        <div> Aqui van los datos </div> 
-
-
-
-
+       <h1>hola</h1>
     )
 }
 }
