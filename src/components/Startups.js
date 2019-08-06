@@ -6,7 +6,9 @@ import React, { Component } from 'react';
     constructor (props){
         super(props);
         this.state ={
-            data: []
+            startups: [],
+            founders:[],
+            updates:[]
         }
     }
 componentWillMount(){
@@ -19,16 +21,49 @@ componentWillMount(){
     }
     )
     .then(response =>  response.json ()) 
-    .then(name => console.log({data: name}));
-}
+    .then(data => {this.setState({startups: data.data})});
 
+    fetch('http://45.232.252.23/laboratoria/public/_/items/founders', 
+    { method: 'GET',
+        headers: {
+        Authorization: 'Bearer laboratoriaToken2019',    
+        'Content-type': 'application/json; '     
+    }
+    }
+    )
+    .then(response =>  response.json ()) 
+    .then(data => console.log({founders: data}));
+
+    fetch('http://45.232.252.23/laboratoria/public/_/items/portfolio_updates', 
+    { method: 'GET',
+        headers: {
+        Authorization: 'Bearer laboratoriaToken2019',    
+        'Content-type': 'application/json; '     
+    }
+    }
+    )
+    .then(response =>  response.json ()) 
+    .then(updates => console.log({updates: updates}));
+}
 
 
 render () {
+    const { startups }= this.state;
     return(
-       <h1>hola</h1>
+       
+      <div>
+          {
+              startups.map((startup)=>{
+                  if(startup.startup_status == "Seguimiento"){
+                    return(<ul>{startup.name + " " + startup.startup_status + " " + startup.descripcion}</ul>)
+                  }
+                  
+              })
+          }
+      </div>
+     
     )
 }
-}
+ }
 
 export default Startups;
