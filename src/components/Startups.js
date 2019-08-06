@@ -8,7 +8,7 @@ class Startups extends Component {
             startups: [],
             founders: [],
             updates: [],
-            chartData: {}
+            // chartData: {}
         }
     }
     componentWillMount() {
@@ -67,6 +67,19 @@ class Startups extends Component {
     //     }
     //   })
     // }
+    // startupName = (update, startup) => {
+    //   console.log('fuera if', startup.id)
+    //
+    //   if(update.startup === startup.id) {
+    //     let startup =
+    //     console.log(startup, 'dentro de if')
+    //     return startup.name;
+    //   }
+    // }
+    //
+    // keys(id).forEach(
+    //   console.log(startup.id);
+    // )
 
 
     render() {
@@ -115,13 +128,43 @@ class Startups extends Component {
             }
           })}
           </div>
-          <Chart
-            chartData={this.state.chartData}
-            date= {this.state.updates.mes}
-            growthChart= {this.state.updates.crecimiento}
-            title="Crecimiento"
-            legendPosition="bottom"
-          />
+
+          {updates.map((update, index) => {
+                       if (update.crecimiento != 'null') {
+                           return (
+                               <div className="card" key={index}>
+                                   <div className="card-body">
+                                      <p className="card-text">{update.startup}</p>
+                                       <h5 className="card-title">{update.crecimiento}</h5>
+                                       <p className="card-text">{update.mes}</p>
+                                       <p className="card-text">{update.fecha}</p>
+                                       <a
+                                           href={update.fecha}
+                                           rel="noopener noreferrer"
+                                           target="_blank"
+                                       >
+                                       </a>
+                                       <a
+                                           href={update.mes}
+                                           rel="noopener noreferrer"
+                                           target="_blank"
+                                       >
+                                           Ver más detalles del proyecto
+                                      </a>
+                                       <a href="#" className="btn btn-primary">Go somewhere</a>
+                                   </div>
+                                   <Chart
+                                   chartData = "1"
+                                   labels = "2"
+                                   data = "3"
+                                   title="Crecimiento"
+                                   legendPosition="bottom"
+                                   />
+                               </div>
+                           )
+                       }
+                   })}
+
           </Fragment>
 
           </div>
