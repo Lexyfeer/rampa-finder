@@ -32,7 +32,7 @@ viewStartups(){
 componentWillMount(){
     this.viewStartups();
 
-        fetch('https://45.232.252.23/laboratoria/public/_/items/founders',
+        fetch('http://45.232.252.23/laboratoria/public/_/items/founders',
             {
                 method: 'GET',
                 headers: {
@@ -64,7 +64,7 @@ componentWillMount(){
             <Fragment>
                 <div className="contentStartups">
                     {startups.map((startup, index) => {
-                        if (startup.startup_status  === 'Seguimiento') {
+                        if (startup.startup_status === 'Seguimiento') {
 
                             return (
                                 <div className="card" key={index}>
