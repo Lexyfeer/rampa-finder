@@ -54,7 +54,7 @@ class Startups extends Component {
             <Fragment>
                 <div className="contentStartups">
                     {startups.map((startup, index) => {
-                        if (startup.startup_status == 'Seguimiento') {
+                        if (startup.startup_status  === 'Seguimiento') {
 
                             return (
                                 <div className="card" key={index}>

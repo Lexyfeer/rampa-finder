@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import './App.css';
-import Startups from './components/Startups';
 import NavbarProfile from './components/Navbar'
 
 class App extends Component{
@@ -8,7 +7,6 @@ class App extends Component{
         return(
             <div className="App">
                <NavbarProfile />
-               <Startups />
             </div>
         )
     }
