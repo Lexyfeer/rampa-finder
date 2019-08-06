@@ -3,6 +3,7 @@ import Search from './Search';
 import Chart from './Charts';
 
 class Home extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -30,18 +31,6 @@ viewStartups(){
 componentWillMount() {
   this.viewStartups();
 
-    fetch('http://45.232.252.23/laboratoria/public/_/items/startups',
-        {
-            method: 'GET',
-            headers: {
-                Authorization: 'Bearer laboratoriaToken2019',
-                'Content-type': 'application/json; '
-            }
-        }
-    )
-        .then(response => response.json())
-        .then(data => { this.setState({ startups: data.data }) });
-
     fetch('http://45.232.252.23/laboratoria/public/_/items/founders',
         {
             method: 'GET',
@@ -65,6 +54,11 @@ componentWillMount() {
         .then(response => response.json())
         .then(data => {this.setState({ updates: data.data }) });
 }
+
+    }
+
+
+
 
 // componentWillMount(){
 //   this.getChartData();
@@ -98,6 +92,7 @@ componentWillMount() {
 // keys(id).forEach(
 //   console.log(startup.id);
 // )
+
 
 
 render() {
