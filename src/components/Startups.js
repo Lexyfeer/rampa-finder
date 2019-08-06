@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import GrowthChart from './charts.js';
+import Chart from './Charts.js';
 
 
  class Startups extends Component {
@@ -26,7 +26,7 @@ componentWillMount(){
 render () {
     return(
         <div> Aqui van los datos
-        <GrowthChart/>
+        <Chart/>
         </div>
 
 
