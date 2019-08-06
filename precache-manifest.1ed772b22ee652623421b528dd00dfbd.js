@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12c10e2e8d72d9bf6f20b522b949a091",
+    "revision": "37d52a65d0528f951a4a7753d303558b",
     "url": "/rampa-finder/index.html"
   },
   {
-    "revision": "6aeb4cce04f8daccdf0e",
-    "url": "/rampa-finder/static/css/main.fc187818.chunk.css"
+    "revision": "74523b3b93887080bfb9",
+    "url": "/rampa-finder/static/css/main.0ed7968b.chunk.css"
   },
   {
     "revision": "7ca326808f28f4b3be8d",
     "url": "/rampa-finder/static/js/2.5c80089f.chunk.js"
   },
   {
-    "revision": "6aeb4cce04f8daccdf0e",
-    "url": "/rampa-finder/static/js/main.0dd53079.chunk.js"
+    "revision": "74523b3b93887080bfb9",
+    "url": "/rampa-finder/static/js/main.b2d9769e.chunk.js"
   },
   {
     "revision": "3bef9383005004ecb22a",

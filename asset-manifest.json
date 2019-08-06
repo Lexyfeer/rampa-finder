@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/rampa-finder/static/css/main.fc187818.chunk.css",
-    "main.js": "/rampa-finder/static/js/main.0dd53079.chunk.js",
-    "main.js.map": "/rampa-finder/static/js/main.0dd53079.chunk.js.map",
+    "main.css": "/rampa-finder/static/css/main.0ed7968b.chunk.css",
+    "main.js": "/rampa-finder/static/js/main.b2d9769e.chunk.js",
+    "main.js.map": "/rampa-finder/static/js/main.b2d9769e.chunk.js.map",
     "runtime~main.js": "/rampa-finder/static/js/runtime~main.04591969.js",
     "runtime~main.js.map": "/rampa-finder/static/js/runtime~main.04591969.js.map",
     "static/js/2.5c80089f.chunk.js": "/rampa-finder/static/js/2.5c80089f.chunk.js",
     "static/js/2.5c80089f.chunk.js.map": "/rampa-finder/static/js/2.5c80089f.chunk.js.map",
     "index.html": "/rampa-finder/index.html",
-    "precache-manifest.57fc12c065bfe566470293ec17f2c74f.js": "/rampa-finder/precache-manifest.57fc12c065bfe566470293ec17f2c74f.js",
+    "precache-manifest.1ed772b22ee652623421b528dd00dfbd.js": "/rampa-finder/precache-manifest.1ed772b22ee652623421b528dd00dfbd.js",
     "service-worker.js": "/rampa-finder/service-worker.js",
-    "static/css/main.fc187818.chunk.css.map": "/rampa-finder/static/css/main.fc187818.chunk.css.map",
+    "static/css/main.0ed7968b.chunk.css.map": "/rampa-finder/static/css/main.0ed7968b.chunk.css.map",
     "static/media/rampa_logo.svg": "/rampa-finder/static/media/rampa_logo.ab3fe23b.svg"
   }
 }
