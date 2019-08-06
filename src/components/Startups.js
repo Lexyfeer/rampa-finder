@@ -50,26 +50,11 @@ class Startups extends Component {
     render() {
         const { startups } = this.state;
         return (
-            // <div>
-
-            //     {
-            //         startups.map((startup) => {
-            //             if (startup.startup_status == "Seguimiento") {
-            //                 return (<ul>{startup.name + ' ' + startup.startup_status + ' ' + startup.descripcion}</ul>)
-            //             }
-
-            //         })
-            //     }
-            // </div>
-
-
-
-
+            
             <Fragment>
                 <div className="contentStartups">
                     {startups.map((startup, index) => {
                         if (startup.startup_status == 'Seguimiento') {
-
 
                             return (
                                 <div className="card" key={index}>
