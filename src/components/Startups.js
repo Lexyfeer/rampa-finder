@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import Chart from './Charts.js';
+// import Chart from './Charts';
 
 class Startups extends Component {
     constructor(props) {
