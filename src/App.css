@@ -13,14 +13,17 @@ body {
 .App {
   width: auto;
   height: auto;
-  margin-top: 10.6rem;
+  margin-top: 5.9rem;
 
   border: solid .2rem lawngreen;
 }
 
 /* BARRA DE NAVEGACION */
 nav {
-  background-color: rgb(61, 61, 61);
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-around;
+  background-color: #313636;
   border-bottom: .5rem solid grey;
 
   border: solid .1rem grey;
@@ -43,28 +46,28 @@ nav {
   display: inline-block;
   margin: auto;
   margin-bottom: .2rem;
-  border: 0.08rem solid white;
+  /* border: 0.08rem solid white; */
   text-decoration: none;
   border-radius: 0.5rem;
-  background-color: rgb(12, 12, 12);
-  color: #f75456;
+  /* background-color: rgb(12, 12, 12); */
+  color: #f5f6f7;
   transition: all 0.4s ease-in-out;
 }
 
 .navMenuLink:hover {
-  color: white;
+  color: #f75456;
   text-decoration: none;
-  border: 0.08rem solid rgba(248, 5, 5, 0.822);
+  /* border: 0.08rem solid rgba(248, 5, 5, 0.822); */
   cursor: pointer;
 }
 
 .navMenuLink.active {
   font-size: 1rem;
   border: 0.2rem solid rgb(248, 5, 45);
-  text-shadow: 0 0 1rem #fff, 0 0 5rem #fff, 0 0 .10rem #f75456;
-  -webkit-text-fill-color: #f4ecff;
-  -webkit-text-stroke-color: #f75456;
-  -webkit-text-stroke-width: 0.1rem;
+  /* text-shadow: 0 0 1rem #fff, 0 0 5rem #fff, 0 0 .10rem #f75456; */
+  -webkit-text-fill-color: #f75456;
+  background-color: #110101;
+  /* -webkit-text-stroke-width: 0.1rem; */
 }
 
 .navMenuLink h6 {
@@ -78,7 +81,11 @@ nav {
   width: 12rem;
   height: 4rem;
 
-  border: solid .2rem red;
+  /* border: solid .2rem red; */
+}
+
+.form-inline {
+  padding: 0 .5rem;
 }
 
 .contentStartups {
@@ -124,13 +131,11 @@ nav {
   }
 
   .form-inline {
-    position: relative;
-    right: 8rem;
+    justify-content: center;
   }
 
-  .navbar-dark .navbar-toggler {
-    position: relative;
-    left: 24rem;
+  .navMenuLink h6 {
+    width: 6.5rem;
   }
 }
 
@@ -141,8 +146,7 @@ nav {
   }
 
   .form-inline {
-    position: relative;
-    right: 1.5rem;
+    justify-content: center;
   }
 
   .navMenuLink {
@@ -158,6 +162,10 @@ nav {
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
   .App {
     margin-top: 5.9rem;
+  }
+
+  .form-inline {
+    justify-content: center;
   }
 
   .navMenuLink {
