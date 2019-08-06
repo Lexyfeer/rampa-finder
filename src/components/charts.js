@@ -9,7 +9,7 @@ class Chart extends Component {
     super(props) //it marks props as not defined when it doesn't appear in both constructor and super
     this.state = {
       chartData:{
-        labels: [],
+        labels: [this.props.chartData],
         dataset: [
           {
             label: 'Update',
@@ -43,7 +43,7 @@ class Chart extends Component {
       <div className="chart">
       Crecimiento reciente
       <Bar
-        data = {this.props.chartData.map(data => data.mes)}
+        data = {this.state.chartData}
         width = {100}
         height = {50}
         options = {{
