@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Search from './Search';
+import Value from './InformationStartups';
 
 
 class Home extends Component {
@@ -10,6 +11,11 @@ class Home extends Component {
         startups: [],
         founders: [],
         updates: [],
+    
+          observaciones: '',
+          evaluacion: '',
+          eval_num: 0,
+      
         // chartData: {}
     }
     this.viewStartups= this.viewStartups.bind(this);
@@ -45,6 +51,23 @@ componentWillMount() {
     
 }
 
+upDate(id, value){  
+  fetch('http://45.232.252.23/laboratoria/public/_/items/startups/'+ id,{
+      method: 'PATCH', 
+      headers: {
+       'Accept': 'application/json',
+       'Content-type': 'application/json;',
+       Authorization: 'Bearer laboratoriaToken2019'
+      },
+      body: JSON.stringify(value),
+     }
+     ).then(response => response.json())
+     .then(data =>{
+         console.log('exito',data)
+         return data
+     }).catch(error => console.error('Error:', error));         
+  }
+
 // componentWillMount(){
 //   this.getChartData();
 // }
@@ -77,10 +100,20 @@ componentWillMount() {
 // keys(id).forEach(
 //   console.log(startup.id);
 // )
+handlerobser=(e)=>{
+  this.setState({observaciones: e.target.value})
+}
+handlerSubmit=(e)=>{
+e.preventDefault();
+console.log('si click')
+const alData ={
+  observaciones: this.state.observaciones
+}
 
-
-
+this.upDate()
+}
 render() {
+  
     const { startups } = this.state;
     // const { founders } = this.state;
     return (
@@ -94,12 +127,7 @@ render() {
 
             return (
               <div className="card" key={index}>
-                <img
-                className="imgProjects card-img-top"
-                src={startup.logo}
-                alt={startup.name}
-                title={startup.name}
-                />
+
               <div className="card-body">
                 <h5 className="card-title">{startup.name}</h5>
                 <p className="card-text">{startup.one_liner}</p>
@@ -119,7 +147,10 @@ render() {
                 >
                 Ver más detalles del proyecto
                 </a>
-                <a href="#" className="btn btn-primary">Go somewhere</a>
+                <form onSubmit={this.handlerSubmit}>
+                <Value handlerProp={this.handlerobser}/>
+                </form>
+                
               </div>
             </div>
           )
@@ -130,4 +161,8 @@ render() {
        )
      }
 }
+
+
+
 export default Home;
+
