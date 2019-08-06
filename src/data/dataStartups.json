@@ -1,0 +1,226 @@
+{
+    "data": [{
+            "id": 10,
+            "name": "Medibox",
+            "website": "medibox.ai",
+            "one_liner": "MediBox ayuda a las personas a recibir sus medicamentos en casa.",
+            "logo": null,
+            "descripcion": "Mediante una suscripción mensual, Medibox ayuda a los pacientes de enfermedades crónicas a recibir sus medicinas en la puerta de su casa y a tiempo, de manera de que no tengan que preocuparse porque olvidaron comprarlo o se está terminando.",
+            "technology_tags": [
+                "saas"
+            ],
+            "startup_category": 1,
+            "startup_tags": [
+                "health"
+            ],
+            "startup_status": "Portfolio",
+            "observaciones": null,
+            "descubierta_en": "angel.co",
+            "stage": 1,
+            "location": "Guadalajara",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 12,
+            "name": "VanTrack",
+            "website": "vantrack.mx",
+            "one_liner": "Plataforma para gestionar las flotillas de corporativos",
+            "logo": null,
+            "descripcion": "A través de un dispositivo y plataforma Trackmyvan ayuda a los corporativos que operan con flotillas  de automóviles a conocer el estatus y ubicación de cada automóvil, además emite alertas cuando los automóviles requieren mantenimiento o ante comportamientos inusuales. ",
+            "technology_tags": [
+                "iot",
+                "saas"
+            ],
+            "startup_category": 2,
+            "startup_tags": [],
+            "startup_status": "Portfolio",
+            "observaciones": null,
+            "descubierta_en": "Crunchbase",
+            "stage": 1,
+            "location": "León",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 15,
+            "name": "ChefBox",
+            "website": "chefbox.mx",
+            "one_liner": "Plataforma de reclutamiento para restaurantes.",
+            "logo": 13,
+            "descripcion": "Chefbox ayuda a los restaurantes a encontrar a los chefs y personal de gastronomía ideales.\nDe manera gratuita los restaurantes pueden acceder a los perfiles y currículums de candidatos. Con la versión premium de Cheffinder, los restaurantes acceden a perfiles seleccionados específicamente para ellos mediante el filtrado especializado de Cheffinder.\n",
+            "technology_tags": [],
+            "startup_category": null,
+            "startup_tags": [
+                "freemium",
+                "recruiting"
+            ],
+            "startup_status": "Portafolio",
+            "observaciones": null,
+            "descubierta_en": "F6S",
+            "stage": 3,
+            "location": "Guadalajara",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 60,
+            "name": "RiskPrevent",
+            "website": "riskprevent.co",
+            "one_liner": "Plataforma para el manejo de riesgo",
+            "logo": 14,
+            "descripcion": "Servicio en la nube para el desarrollo de gestión de riesgos empresariales, ciberseguridad y privacidad.\nMediante RiskPrevent, las empresas y corporativos evitan pérdidas financieras derivadas de ataques cibernéticos.",
+            "technology_tags": [
+                "saas"
+            ],
+            "startup_category": 2,
+            "startup_tags": [
+                "security"
+            ],
+            "startup_status": "Descubierta",
+            "observaciones": null,
+            "descubierta_en": "Demo Day Incubadora Local",
+            "stage": 1,
+            "location": "Guadalajara",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 65,
+            "name": "Nurse Finder",
+            "website": "nursefinder.mx",
+            "one_liner": "Aplicación para encontrar a enfermeros (as) bajo demanda o suscripción.",
+            "logo": 15,
+            "descripcion": "Plataforma para contratar servicios de enfermería bajo demanda o por planes, semanales y mensuales.\nCon Nurse Finder filtra a los candidatos más aptos para cuidados de enfermería mediante su plataforma y app. Además, los cuidadores emiten notificaciones y reportes sobre los cuidados brindados. ",
+            "technology_tags": [],
+            "startup_category": 1,
+            "startup_tags": [],
+            "startup_status": "Seguimiento",
+            "observaciones": null,
+            "descubierta_en": "Demo Day Incubadora Local",
+            "stage": 1,
+            "location": "Guadalajara",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 80,
+            "name": "RenovaCasa",
+            "website": "renovacasa.mx",
+            "one_liner": "Marketplace para proyectos de renovación de hogares.",
+            "logo": 16,
+            "descripcion": "Plataforma en la que los clientes pueden obtener precios personalizados en tiempo real para el proyecto de renovación de su hogar.\nLos propietarios pueden obtener precios personalizados en línea para productos de las mejores marcas en mejoras para el hogar, incluyendo la medición e instalación profesional. ",
+            "technology_tags": [
+                "marketplace"
+            ],
+            "startup_category": 4,
+            "startup_tags": [
+                "home rennovation"
+            ],
+            "startup_status": "Seguimiento",
+            "observaciones": null,
+            "descubierta_en": "F6S",
+            "stage": 3,
+            "location": "Ciudad de México",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 90,
+            "name": "Credialerta",
+            "website": "credialerta.mx",
+            "one_liner": "Credialerta informa a los usuarios sobre sus créditos y emite alertas sobre los mismos.",
+            "logo": null,
+            "descripcion": "Mediante la app de credialert, los consumidores vinculan, rastrean y pagan automáticamente deudas personales (desde tarjetas de crédito hasta préstamos para vivienda), reciben recomendaciones financieras personalizadas y protegen su crédito desde un solo lugar a través de la web y el móvil.",
+            "technology_tags": [
+                "android",
+                "fintech",
+                "ios",
+                "mobile"
+            ],
+            "startup_category": 4,
+            "startup_tags": [],
+            "startup_status": "Descubierta",
+            "observaciones": "Comenzaron operaciones en mayo de 2019.",
+            "descubierta_en": "AngelList",
+            "stage": 1,
+            "location": "Monterrey",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 326,
+            "name": "Hooli",
+            "website": "http://www.hooli.xyz/",
+            "one_liner": "Making the world a better place.",
+            "logo": 8,
+            "descripcion": "We’re more than the chat, mail, search and phone that’s crowned Hooli as the most respected brand in the world.",
+            "technology_tags": [
+                "chat",
+                "storage"
+            ],
+            "startup_category": 2,
+            "startup_tags": [
+                "chat",
+                "hooli",
+                "software"
+            ],
+            "startup_status": "Portfolio",
+            "observaciones": null,
+            "descubierta_en": "Crunchbase",
+            "stage": 4,
+            "location": "California",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 333,
+            "name": "Pied Piper",
+            "website": "http://www.piedpiper.com/",
+            "one_liner": "Welcome to the web you never knew you wanted",
+            "logo": 11,
+            "descripcion": "\nPied Piper's new internet is built for users, by users.\n\nYou supply the storage, compute, and networking resources that power our entire decentralized web.\nNow there's a way to give credit where credit is due. Compute credit, that is!",
+            "technology_tags": [
+                "a",
+                "blockchain",
+                "decentralized"
+            ],
+            "startup_category": 4,
+            "startup_tags": [
+                "b",
+                "blockchain",
+                "crypto"
+            ],
+            "startup_status": "Descubierta",
+            "observaciones": "",
+            "descubierta_en": "Crunchbase",
+            "stage": 3,
+            "location": "California",
+            "evaluacion": null,
+            "eval_num": null
+        },
+        {
+            "id": 334,
+            "name": "Endframe",
+            "website": "https://www.endframe.net/#welcome",
+            "one_liner": "endframe is a full service production company.",
+            "logo": 12,
+            "descripcion": "We tell people’s stories and help our clients by taking the stress away from the production process and adding value to you and your business. From large scale projects to the simplest of requests, we approach each job and every client with the same attention to detail and immense pride in our work.\n\nEvery job is unique so we prefer to quote all work on an individual basis. Drop us a line and let us show you how we can help bring your vision to life.",
+            "technology_tags": [
+                "video"
+            ],
+            "startup_category": 2,
+            "startup_tags": [
+                "compression",
+                "video"
+            ],
+            "startup_status": "Muerta",
+            "observaciones": null,
+            "descubierta_en": "AngelList",
+            "stage": 3,
+            "location": "Guadalajara",
+            "evaluacion": null,
+            "eval_num": null
+        }
+    ]
+}

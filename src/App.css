@@ -81,6 +81,27 @@ nav {
   border: solid .2rem red;
 }
 
+.contentStartups {
+  margin: auto;
+
+  border: solid .2rem red;
+}
+
+.contentStartups a {
+  display: block;
+}
+
+.card {
+  width: 18rem;
+  display: inline-flex;
+  margin: .5rem .7rem;
+}
+
+.btn-primary {
+  margin: .5rem auto;
+  display: block;
+}
+
 
 /* MEDIA QUERIES */
 /* Extra small devices */
