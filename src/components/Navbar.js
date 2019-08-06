@@ -12,7 +12,7 @@ export default class NavbarProfile extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar variant="dark" expand="lg" fixed="top">
+        <Navbar variant="dark" expand="md" fixed="top">
           <Navbar.Brand>
             <Link to="/">
               <img className="App-logo-image" src={Logo} alt="logo" />
