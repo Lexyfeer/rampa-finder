@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
- class Startup extends Component {
+ class Startups extends Component {
     constructor (props){
         super(props);
         this.state ={
@@ -31,4 +31,4 @@ render () {
 }
 }
 
-export default Startup
+export default Startups;
