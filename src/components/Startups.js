@@ -74,7 +74,7 @@ componentWillMount(){
            }
            ).then(response => response.json())
            .then(data =>{
-               console.log('exitp',data)
+               console.log('exito',data)
                return data
            }).catch(error => console.error('Error:', error));         
         }
